@@ -238,6 +238,7 @@ UnityEngine.CanvasGroup::get_ignoreParentGroups
 UnityEngine.CanvasGroup::get_interactable
 UnityEngine.CanvasGroup::get_alpha
 UnityEngine.CanvasGroup::set_alpha
+UnityEngine.CanvasGroup::set_interactable
 UnityEngine.CanvasRenderer::get_cull
 UnityEngine.CanvasRenderer::get_hasMoved
 UnityEngine.CanvasRenderer::get_absoluteDepth
@@ -267,6 +268,7 @@ UnityEngine.CharacterController::set_height
 UnityEngine.CharacterController::Move_Injected
 UnityEngine.Collider::get_enabled
 UnityEngine.Collider::get_isTrigger
+UnityEngine.Collider::ClosestPoint_Injected
 UnityEngine.Collider::get_bounds_Injected
 UnityEngine.Component::BroadcastMessage
 UnityEngine.Component::GetComponentFastPath
@@ -495,6 +497,7 @@ UnityEngine.Light::get_color_Injected
 UnityEngine.Light::get_shadows
 UnityEngine.Light::get_type
 UnityEngine.Light::get_cookie
+UnityEngine.LineRenderer::get_useWorldSpace
 UnityEngine.LineRenderer::SetColorGradient
 UnityEngine.LineRenderer::SetPositions
 UnityEngine.LineRenderer::SetWidthCurve
@@ -592,14 +595,12 @@ UnityEngine.PhysicsScene::Internal_Raycast_Injected
 UnityEngine.PhysicsScene::IsValid_Internal_Injected
 UnityEngine.PhysicsScene::Internal_RaycastNonAlloc_Injected
 UnityEngine.PhysicsScene::Internal_SphereCastNonAlloc_Injected
-UnityEngine.PhysicsScene2D::IsValid_Internal_Injected
 UnityEngine.PhysicsScene2D::GetRayIntersectionArray_Internal_Injected
 UnityEngine.PhysicsScene2D::RaycastArray_Internal_Injected
 UnityEngine.PhysicsScene2D::RaycastList_Internal_Injected
 UnityEngine.PhysicsScene2D::GetRayIntersection_Internal_Injected
 UnityEngine.PhysicsScene2D::Raycast_Internal_Injected
 UnityEngine.PhysicsSceneExtensions::GetPhysicsScene_Internal_Injected
-UnityEngine.PhysicsSceneExtensions2D::GetPhysicsScene_Internal_Injected
 UnityEngine.Playables.PlayableHandle::IsValid_Injected
 UnityEngine.Playables.PlayableHandle::GetPlayableType_Injected
 UnityEngine.PlayerConnectionInternal::IsConnected
@@ -618,7 +619,6 @@ UnityEngine.Quaternion::Internal_FromEulerRad_Injected
 UnityEngine.Quaternion::Internal_ToAxisAngleRad_Injected
 UnityEngine.Quaternion::Internal_ToEulerRad_Injected
 UnityEngine.Quaternion::Inverse_Injected
-UnityEngine.Quaternion::Lerp_Injected
 UnityEngine.Quaternion::LookRotation_Injected
 UnityEngine.Quaternion::Slerp_Injected
 UnityEngine.RectOffset::get_bottom
@@ -829,8 +829,10 @@ UnityEngine.Transform::InverseTransformPoint_Injected
 UnityEngine.Transform::RotateAroundInternal_Injected
 UnityEngine.Transform::SetAsFirstSibling
 UnityEngine.Transform::SetParent
+UnityEngine.Transform::SetPositionAndRotation_Injected
 UnityEngine.Transform::TransformDirection_Injected
 UnityEngine.Transform::TransformPoint_Injected
+UnityEngine.Transform::TransformVector_Injected
 UnityEngine.Transform::get_localPosition_Injected
 UnityEngine.Transform::get_localRotation_Injected
 UnityEngine.Transform::get_localScale_Injected
@@ -895,9 +897,7 @@ UnityEngine.XR.InputDevices::TryGetFeatureValue_float
 UnityEngine.XR.InputDevices::TryGetHapticCapabilities
 UnityEngine.XR.InputTracking::GetDeviceIdAtXRNode
 UnityEngine.XR.InputTracking::GetNodeStates_Internal
-UnityEngine.XR.InputTracking::Recenter
 UnityEngine.XR.Provider.XRStats::TryGetStat_Internal
-UnityEngine.XR.XRDevice::SetTrackingSpaceType
 UnityEngine.XR.XRDevice::DisableAutoXRCameraTracking
 UnityEngine.XR.XRDisplaySubsystem::TryGetAppGPUTimeLastFrame
 UnityEngine.XR.XRDisplaySubsystem::TryGetCompositorGPUTimeLastFrame
