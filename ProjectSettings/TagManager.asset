@@ -8,13 +8,13 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Teleportation
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Doors
+  - Player
+  - Interactables
+  - Locks
   - 
   - 
   - 
